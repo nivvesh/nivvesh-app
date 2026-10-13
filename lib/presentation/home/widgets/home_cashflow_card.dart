@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:nivvesh/application/home/home_cashflow_provider.dart';
 import 'package:nivvesh/application/home/home_summary_provider.dart';
-import 'package:nivvesh/application/transactions/sms_parser.dart' hide entropySeed;
 import 'package:nivvesh/core/theme/app_colors.dart';
 import 'package:nivvesh/presentation/notifications/notifications_page.dart';
 
@@ -181,7 +180,6 @@ class _CashNoifState extends State<CashNoif> {
 
   @override
   Widget build(BuildContext context) {
-    final c = AppColors.of(context);
 
     return ListenableBuilder(
       listenable: widget.controller,
